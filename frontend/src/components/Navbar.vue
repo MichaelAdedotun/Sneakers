@@ -57,15 +57,17 @@ const { cart, removeFromCart } = useCart()
     </div>
 
     <!-- Mobile Menu -->
-    <div v-if="isMenuOpen" class="absolute top-full left-0 bg-white w-1/2 h-full px-6 py-4 md:hidden z-10">
-      <ul class="flex flex-col gap-4 text-gray-600 text-sm">
-        <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Collections</a></li>
-        <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Men</a></li>
-        <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Women</a></li>
-        <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">About</a></li>
-        <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Contact</a></li>
-      </ul>
-    </div>
+    <section v-if="isMenuOpen" class="bg-black/60 w-full h-screen absolute top-full left-0 ">
+      <div class="bg-white w-3/5 h-screen px-6 py-4 md:hidden z-10">
+        <ul class="flex flex-col gap-4 text-gray-600 text-sm">
+          <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Collections</a></li>
+          <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Men</a></li>
+          <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Women</a></li>
+          <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">About</a></li>
+          <li><a href="#" class="hover:text-black hover:border-b border-b-orange-500 pb-1">Contact</a></li>
+        </ul>
+      </div>
+    </section>
   </nav>
 </template>
 
